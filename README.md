@@ -1,51 +1,39 @@
 # I2C Address Compatibility Checker
 
-A free, browser-based I2C address lookup and compatibility checker for Arduino, ESP32, Raspberry Pi and other embedded projects.
+A free, browser-based tool for looking up I2C device addresses and checking whether multiple devices can share the same I2C bus.
+
+Designed for Arduino, ESP32, Raspberry Pi and other embedded systems.
+
+🔗 **Try the online tool:**  
+https://embeddednerd.com/tools/i2c-address-lookup/
+
+---
 
 ## Features
 
-- Search I2C devices by name, type, manufacturer or address
-- Look up common I2C addresses
-- Select multiple devices
-- Detect address conflicts
-- Find a unique address assignment when possible
-- Suggest practical solutions for unresolved conflicts
-- Runs entirely in the browser
-- No backend or API required
+- 🔍 Search I2C devices by name
+- 🔢 Search by hexadecimal I2C address
+- 🔌 Select multiple devices on the same I2C bus
+- ⚠️ Detect potential address conflicts
+- 🔧 Find a valid address configuration when alternatives are available
+- 💡 Suggest solutions for unresolved conflicts
+- 🌐 Runs entirely in the browser
+- 🚫 No backend, account or API required
+- 📱 Responsive interface
 
-## Example
+---
 
-`MPU6050 + DS3231`
+## Why This Tool?
 
-Both devices commonly use `0x68`. If the MPU6050 supports `0x69`, the checker can recommend:
+I2C makes it easy to connect multiple sensors and peripherals using only two communication lines:
 
-| Device | Address |
-|---|---|
-| MPU6050 | `0x69` |
-| DS3231 | `0x68` |
+- SDA
+- SCL
 
-## Important
+However, every device on the same I2C bus needs a unique address.
 
-The checker evaluates **I2C address conflicts**. It does not guarantee electrical compatibility. Always verify supply voltage, logic levels, pull-ups, bus speed, capacitance and the documentation for the exact breakout board.
+For example:
 
-## Run locally
-
-Because the device database is loaded from `data/devices.json`, use a local web server rather than opening `index.html` directly.
-
-```bash
-python3 -m http.server
-```
-
-Then open `http://localhost:8000/`.
-
-## Contributing
-
-Suggestions for new devices, corrections and improvements are welcome. Please open an issue or pull request and include a reliable datasheet or manufacturer reference when proposing address changes.
-
-## Online Tool
-
-https://embeddednerd.com/tools/i2c-address-lookup/
-
-## License
-
-MIT License. See `LICENSE`.
+```text
+MPU6050 → 0x68 / 0x69
+DS3231  → 0x68
