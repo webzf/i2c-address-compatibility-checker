@@ -7,7 +7,11 @@
     ],
     "category": "3-Axis Accelerometer",
     "manufacturer": "Bosch Sensortec",
-    "description": "Ultra-low-power 3-axis accelerometer with motion detection, orientation detection, step counting and activity recognition."
+    "description": "Ultra-low-power 3-axis accelerometer with motion detection, orientation detection, step counting and activity recognition.",
+    "source": {
+      "label": "Bosch Sensortec Datasheet",
+      "url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma400-ds000.pdf"
+    }
   },
   {
     "name": "MPU6050",
@@ -27,7 +31,11 @@
     ],
     "category": "Environmental Sensor",
     "manufacturer": "Bosch Sensortec",
-    "description": "Temperature, humidity and barometric pressure sensor."
+    "description": "Temperature, humidity and barometric pressure sensor.",
+    "source": {
+      "label": "Bosch Sensortec Datasheet",
+      "url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
+    }
   },
   {
     "name": "BMP280",
@@ -37,7 +45,11 @@
     ],
     "category": "Pressure Sensor",
     "manufacturer": "Bosch Sensortec",
-    "description": "Barometric pressure and temperature sensor."
+    "description": "Barometric pressure and temperature sensor.",
+    "source": {
+      "label": "Bosch Sensortec Product Page",
+      "url": "https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/"
+    }
   },
   {
     "name": "SSD1306 OLED",
@@ -66,7 +78,11 @@
     ],
     "category": "Real-Time Clock",
     "manufacturer": "Analog Devices",
-    "description": "High-accuracy real-time clock."
+    "description": "High-accuracy real-time clock.",
+    "source": {
+      "label": "Analog Devices Datasheet",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf"
+    }
   },
   {
     "name": "DS1307",
@@ -91,7 +107,11 @@
     ],
     "category": "I/O Expander",
     "manufacturer": "NXP",
-    "description": "8-bit I2C GPIO expander commonly used with LCD backpacks."
+    "description": "8-bit I2C GPIO expander commonly used with LCD backpacks.",
+    "source": {
+      "label": "NXP Datasheet",
+      "url": "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+    }
   },
   {
     "name": "PCF8574A",
@@ -107,7 +127,11 @@
     ],
     "category": "I/O Expander",
     "manufacturer": "NXP",
-    "description": "Alternate-address version of the PCF8574."
+    "description": "Alternate-address version of the PCF8574.",
+    "source": {
+      "label": "NXP Datasheet",
+      "url": "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+    }
   },
   {
     "name": "MCP23017",
@@ -123,7 +147,11 @@
     ],
     "category": "16-Bit I/O Expander",
     "manufacturer": "Microchip",
-    "description": "16-bit I2C GPIO expander."
+    "description": "16-bit I2C GPIO expander.",
+    "source": {
+      "label": "Microchip Datasheet",
+      "url": "https://ww1.microchip.com/downloads/en/devicedoc/20001952c.pdf"
+    }
   },
   {
     "name": "ADS1115",
@@ -135,7 +163,11 @@
     ],
     "category": "Analog-to-Digital Converter",
     "manufacturer": "Texas Instruments",
-    "description": "16-bit precision ADC with four input channels."
+    "description": "16-bit precision ADC with four input channels.",
+    "source": {
+      "label": "Texas Instruments Datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf"
+    }
   },
   {
     "name": "ADS1015",
@@ -159,7 +191,11 @@
     ],
     "category": "Current / Power Monitor",
     "manufacturer": "Texas Instruments",
-    "description": "Current, voltage and power monitoring sensor."
+    "description": "Current, voltage and power monitoring sensor.",
+    "source": {
+      "label": "Texas Instruments Product Page",
+      "url": "https://www.ti.com/product/INA219"
+    }
   },
   {
     "name": "PCA9685",
@@ -183,7 +219,11 @@
     ],
     "category": "PWM / Servo Driver",
     "manufacturer": "NXP",
-    "description": "16-channel PWM controller commonly used for servo and LED control."
+    "description": "16-channel PWM controller commonly used for servo and LED control.",
+    "source": {
+      "label": "NXP Datasheet",
+      "url": "https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf"
+    }
   },
   {
     "name": "BH1750",
@@ -220,7 +260,11 @@
     ],
     "category": "Time-of-Flight Distance Sensor",
     "manufacturer": "STMicroelectronics",
-    "description": "Time-of-flight distance sensor."
+    "description": "Time-of-flight distance sensor.",
+    "source": {
+      "label": "STMicroelectronics Product Page",
+      "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x"
+    }
   },
   {
     "name": "SHT31",
@@ -265,6 +309,10 @@
     ],
     "category": "I2C Multiplexer",
     "manufacturer": "Texas Instruments",
-    "description": "8-channel I2C multiplexer for address conflicts and separate I2C channels."
+    "description": "8-channel I2C multiplexer for address conflicts and separate I2C channels.",
+    "source": {
+      "label": "Texas Instruments Datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/tca9548a.pdf"
+    }
   }
 ]
