@@ -22,6 +22,7 @@ $("results").innerHTML=list.map(d=>`
 <p class="meta"><strong>Type:</strong>${esc(d.category)}</p>
 <p class="meta"><strong>Manufacturer:</strong>${esc(d.manufacturer)}</p>
 <p>${esc(d.description)}</p>
+${d.source ? `<p class="source"><a href="${d.source.url}" target="_blank" rel="noopener noreferrer">Source: ${esc(d.source.label)} ↗</a></p>` : ""}
 </article>`).join("")||'<div class="result"><strong>No matching devices found.</strong></div>';
 }
 
