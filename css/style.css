@@ -33,3 +33,5 @@ th,td{text-align:left;padding:9px;border-bottom:1px solid rgba(255,255,255,.1)}
 .addr{font-family:monospace;color:#5bc2be;font-weight:700}
 footer{text-align:center;opacity:.55;font-size:.85rem}
 @media(max-width:620px){.search-row,.selector-row{flex-direction:column}.search-row button,.selector-row button{width:100%}.container{padding:28px 15px}.panel{padding:20px}}
+
+.source{margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-size:.88rem}.source a{color:#5bc2be}.source a:hover{text-decoration:underline}
