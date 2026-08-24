@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Free I2C address lookup and compatibility checker for Arduino, ESP32 and other embedded projects.">
+<title>I2C Address Lookup & Compatibility Checker</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="container">
+<header>
+<span class="kicker">I2C TOOL</span>
+<h1>I2C Address Lookup & Compatibility Checker</h1>
+<p>Find common I2C addresses and check whether multiple devices can share the same I2C bus.</p>
+</header>
+
+<section class="panel">
+<h2>Find an I2C Device</h2>
+<p>Search by device, sensor type, manufacturer or hexadecimal address.</p>
+<div class="search-row">
+<input id="search" type="search" placeholder="Search device or address..." autocomplete="off">
+<button id="clear">Clear</button>
+</div>
+<div class="examples"><span>Try:</span>
+<button class="example">MPU6050</button>
+<button class="example">0x68</button>
+<button class="example">SSD1306</button>
+<button class="example">BMA400</button>
+</div>
+<div id="count" aria-live="polite"></div>
+<div id="results"></div>
+</section>
+
+<section class="panel">
+<span class="kicker">COMPATIBILITY CHECK</span>
+<h2>Can These Devices Share an I2C Bus?</h2>
+<p>Select the devices you plan to connect to the same bus.</p>
+<div class="selector-row">
+<select id="device"><option value="">Select a device...</option></select>
+<button id="add">+ Add Device</button>
+</div>
+<div id="selected"></div>
+<div id="compatibility" aria-live="polite"></div>
+</section>
+
+<footer>
+<p>Open-source I2C reference tool for embedded developers.</p>
+</footer>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
