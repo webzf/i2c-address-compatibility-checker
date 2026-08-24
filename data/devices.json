@@ -1,1 +1,270 @@
-
+[
+  {
+    "name": "BMA400",
+    "addresses": [
+      "0x14",
+      "0x15"
+    ],
+    "category": "3-Axis Accelerometer",
+    "manufacturer": "Bosch Sensortec",
+    "description": "Ultra-low-power 3-axis accelerometer with motion detection, orientation detection, step counting and activity recognition."
+  },
+  {
+    "name": "MPU6050",
+    "addresses": [
+      "0x68",
+      "0x69"
+    ],
+    "category": "Accelerometer & Gyroscope",
+    "manufacturer": "TDK InvenSense",
+    "description": "6-axis motion sensor combining a 3-axis accelerometer and 3-axis gyroscope."
+  },
+  {
+    "name": "BME280",
+    "addresses": [
+      "0x76",
+      "0x77"
+    ],
+    "category": "Environmental Sensor",
+    "manufacturer": "Bosch Sensortec",
+    "description": "Temperature, humidity and barometric pressure sensor."
+  },
+  {
+    "name": "BMP280",
+    "addresses": [
+      "0x76",
+      "0x77"
+    ],
+    "category": "Pressure Sensor",
+    "manufacturer": "Bosch Sensortec",
+    "description": "Barometric pressure and temperature sensor."
+  },
+  {
+    "name": "SSD1306 OLED",
+    "addresses": [
+      "0x3C",
+      "0x3D"
+    ],
+    "category": "OLED Display Controller",
+    "manufacturer": "Solomon Systech",
+    "description": "Popular monochrome OLED display controller used in many I2C displays."
+  },
+  {
+    "name": "SH1106 OLED",
+    "addresses": [
+      "0x3C",
+      "0x3D"
+    ],
+    "category": "OLED Display Controller",
+    "manufacturer": "Sino Wealth",
+    "description": "Monochrome OLED display controller commonly used in small I2C OLED modules."
+  },
+  {
+    "name": "DS3231",
+    "addresses": [
+      "0x68"
+    ],
+    "category": "Real-Time Clock",
+    "manufacturer": "Analog Devices",
+    "description": "High-accuracy real-time clock."
+  },
+  {
+    "name": "DS1307",
+    "addresses": [
+      "0x68"
+    ],
+    "category": "Real-Time Clock",
+    "manufacturer": "Maxim Integrated",
+    "description": "Low-power real-time clock."
+  },
+  {
+    "name": "PCF8574",
+    "addresses": [
+      "0x20",
+      "0x21",
+      "0x22",
+      "0x23",
+      "0x24",
+      "0x25",
+      "0x26",
+      "0x27"
+    ],
+    "category": "I/O Expander",
+    "manufacturer": "NXP",
+    "description": "8-bit I2C GPIO expander commonly used with LCD backpacks."
+  },
+  {
+    "name": "PCF8574A",
+    "addresses": [
+      "0x38",
+      "0x39",
+      "0x3A",
+      "0x3B",
+      "0x3C",
+      "0x3D",
+      "0x3E",
+      "0x3F"
+    ],
+    "category": "I/O Expander",
+    "manufacturer": "NXP",
+    "description": "Alternate-address version of the PCF8574."
+  },
+  {
+    "name": "MCP23017",
+    "addresses": [
+      "0x20",
+      "0x21",
+      "0x22",
+      "0x23",
+      "0x24",
+      "0x25",
+      "0x26",
+      "0x27"
+    ],
+    "category": "16-Bit I/O Expander",
+    "manufacturer": "Microchip",
+    "description": "16-bit I2C GPIO expander."
+  },
+  {
+    "name": "ADS1115",
+    "addresses": [
+      "0x48",
+      "0x49",
+      "0x4A",
+      "0x4B"
+    ],
+    "category": "Analog-to-Digital Converter",
+    "manufacturer": "Texas Instruments",
+    "description": "16-bit precision ADC with four input channels."
+  },
+  {
+    "name": "ADS1015",
+    "addresses": [
+      "0x48",
+      "0x49",
+      "0x4A",
+      "0x4B"
+    ],
+    "category": "Analog-to-Digital Converter",
+    "manufacturer": "Texas Instruments",
+    "description": "12-bit ADC with four input channels."
+  },
+  {
+    "name": "INA219",
+    "addresses": [
+      "0x40",
+      "0x41",
+      "0x44",
+      "0x45"
+    ],
+    "category": "Current / Power Monitor",
+    "manufacturer": "Texas Instruments",
+    "description": "Current, voltage and power monitoring sensor."
+  },
+  {
+    "name": "PCA9685",
+    "addresses": [
+      "0x40",
+      "0x41",
+      "0x42",
+      "0x43",
+      "0x44",
+      "0x45",
+      "0x46",
+      "0x47",
+      "0x48",
+      "0x49",
+      "0x4A",
+      "0x4B",
+      "0x4C",
+      "0x4D",
+      "0x4E",
+      "0x4F"
+    ],
+    "category": "PWM / Servo Driver",
+    "manufacturer": "NXP",
+    "description": "16-channel PWM controller commonly used for servo and LED control."
+  },
+  {
+    "name": "BH1750",
+    "addresses": [
+      "0x23",
+      "0x5C"
+    ],
+    "category": "Light Sensor",
+    "manufacturer": "ROHM",
+    "description": "Digital ambient light sensor."
+  },
+  {
+    "name": "HMC5883L",
+    "addresses": [
+      "0x1E"
+    ],
+    "category": "3-Axis Magnetometer",
+    "manufacturer": "Honeywell",
+    "description": "Digital 3-axis magnetic field sensor."
+  },
+  {
+    "name": "QMC5883L",
+    "addresses": [
+      "0x0D"
+    ],
+    "category": "3-Axis Magnetometer",
+    "manufacturer": "QST",
+    "description": "Digital 3-axis magnetic sensor commonly used as a compass module."
+  },
+  {
+    "name": "VL53L0X",
+    "addresses": [
+      "0x29"
+    ],
+    "category": "Time-of-Flight Distance Sensor",
+    "manufacturer": "STMicroelectronics",
+    "description": "Time-of-flight distance sensor."
+  },
+  {
+    "name": "SHT31",
+    "addresses": [
+      "0x44",
+      "0x45"
+    ],
+    "category": "Temperature & Humidity Sensor",
+    "manufacturer": "Sensirion",
+    "description": "Digital temperature and humidity sensor."
+  },
+  {
+    "name": "CCS811",
+    "addresses": [
+      "0x5A",
+      "0x5B"
+    ],
+    "category": "Air Quality Sensor",
+    "manufacturer": "ScioSense",
+    "description": "Digital indoor air-quality sensor."
+  },
+  {
+    "name": "AHT20",
+    "addresses": [
+      "0x38"
+    ],
+    "category": "Temperature & Humidity Sensor",
+    "manufacturer": "ASAIR",
+    "description": "Digital temperature and humidity sensor."
+  },
+  {
+    "name": "TCA9548A",
+    "addresses": [
+      "0x70",
+      "0x71",
+      "0x72",
+      "0x73",
+      "0x74",
+      "0x75",
+      "0x76",
+      "0x77"
+    ],
+    "category": "I2C Multiplexer",
+    "manufacturer": "Texas Instruments",
+    "description": "8-channel I2C multiplexer for address conflicts and separate I2C channels."
+  }
+]
