@@ -3,21 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Free I2C address lookup and compatibility checker for Arduino, ESP32 and other embedded projects.">
-<title>I2C Address Lookup & Compatibility Checker</title>
+<meta name="description" content="Free I2C address checker and lookup tool. Find I2C device addresses, detect address conflicts, and test whether Arduino, ESP32, Raspberry Pi and other devices can share an I2C bus.">
+<meta name="keywords" content="I2C address checker, I2C address lookup, I2C address conflict, I2C address compatibility, I2C bus, Arduino I2C, ESP32 I2C, Raspberry Pi I2C">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://embeddednerd.com/tools/i2c-address-lookup/">
+<meta property="og:title" content="I2C Address Checker & Lookup Tool">
+<meta property="og:description" content="Look up I2C device addresses and check for address conflicts before connecting multiple devices to the same I2C bus.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://embeddednerd.com/tools/i2c-address-lookup/">
+<title>I2C Address Checker & Lookup Tool</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <main class="container">
 <header>
 <span class="kicker">I2C TOOL</span>
-<h1>I2C Address Lookup & Compatibility Checker</h1>
-<p>Find common I2C addresses and check whether multiple devices can share the same I2C bus.</p>
+<h1>I2C Address Checker & Lookup Tool</h1>
+<p>Look up I2C device addresses, detect address conflicts, and check whether multiple sensors and modules can share the same I2C bus.</p>
 </header>
 
 <section class="panel">
-<h2>Find an I2C Device</h2>
-<p>Search by device, sensor type, manufacturer or hexadecimal address.</p>
+<h2>I2C Address Lookup</h2>
+<p>Search for an I2C device by name, sensor type, manufacturer, or hexadecimal address.</p>
 <div class="search-row">
 <input id="search" type="search" placeholder="Search device or address..." autocomplete="off">
 <button id="clear">Clear</button>
@@ -35,7 +42,7 @@
 <section class="panel">
 <span class="kicker">COMPATIBILITY CHECK</span>
 <h2>Can These Devices Share an I2C Bus?</h2>
-<p>Select the devices you plan to connect to the same bus.</p>
+<p>Select the devices you plan to connect to the same I2C bus to check for address conflicts and find a compatible address configuration.</p>
 <div class="selector-row">
 <select id="device"><option value="">Select a device...</option></select>
 <button id="add">+ Add Device</button>
@@ -44,8 +51,14 @@
 <div id="compatibility" aria-live="polite"></div>
 </section>
 
+<section class="panel">
+<h2>I2C Address Conflicts</h2>
+<p>Two I2C devices cannot normally use the same address on the same bus. This checker helps identify overlapping addresses and, when possible, finds an alternative address assignment.</p>
+<p>Common examples include MPU6050 and DS3231 at 0x68, or multiple OLED displays using 0x3C. For hardware-specific guidance, verify the exact module datasheet.</p>
+<p>Learn more about I2C, ESP32 and embedded hardware on <a href="https://embeddednerd.com/">Embedded Nerd</a>.</p>
+</section>
 <footer>
-<p>Open-source I2C reference tool for embedded developers.</p>
+<p>Open-source I2C address checker and reference tool for embedded developers.</p>
 </footer>
 </main>
 <script src="js/app.js"></script>
