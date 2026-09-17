@@ -1,6 +1,8 @@
-# I2C Address Compatibility Checker
+# I2C Address Checker & Compatibility Tool
 
-A free, browser-based tool for looking up I2C device addresses and checking whether multiple devices can share the same I2C bus.
+A free, browser-based **I2C address lookup and compatibility checker** for finding device addresses, detecting I2C address conflicts, and checking whether multiple devices can share the same I2C bus.
+
+Useful for **Arduino, ESP32, Raspberry Pi, sensors, OLED displays, ADCs, GPIO expanders, RTCs, and other embedded systems**.
 
 Designed for Arduino, ESP32, Raspberry Pi and other embedded systems.
 
@@ -22,6 +24,12 @@ https://embeddednerd.com/tools/i2c-address-lookup/
 - Responsive interface
 
 ---
+
+## I2C Address Conflicts
+
+An I2C address conflict occurs when two devices on the same bus respond to the same address. Before wiring a project, use this tool to check overlapping addresses and find an available configuration when the devices support alternative addresses.
+
+Typical examples include **MPU6050 (0x68/0x69) + DS3231 (0x68)** and multiple I2C OLED modules using **0x3C/0x3D**.
 
 ## Why This Tool?
 
@@ -255,9 +263,10 @@ Suggestions and contributions are welcome.
 
 ---
 
-## Online Version
+## Online I2C Address Checker
 
-A hosted version of this tool is available on Embedded Nerd:
+Use the free hosted **I2C address lookup and compatibility checker** on Embedded Nerd:
+
 
 https://embeddednerd.com/tools/i2c-address-lookup/
 
