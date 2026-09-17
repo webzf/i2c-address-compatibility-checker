@@ -28,7 +28,7 @@ ${d.source ? `<p class="source"><a href="${d.source.url}" target="_blank" rel="n
 
 $("search").addEventListener("input",e=>{
 const q=e.target.value.trim().toLowerCase();
-render(q?devices.filter(d=>[d.name,d.category,d.manufacturer,d.description,...d.addresses].join(" ").toLowerCase().includes(q)):devices);
+render(q?devices.filter(d=>[d.name,d.category,d.manufacturer,d.description,...d.addresses,...(d.aliases||[])].join(" ").toLowerCase().includes(q)):devices);
 });
 
 $("clear").onclick=()=>{
