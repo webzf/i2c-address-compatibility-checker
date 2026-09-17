@@ -11,7 +11,10 @@
     "source": {
       "label": "Bosch Sensortec Datasheet",
       "url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma400-ds000.pdf"
-    }
+    },
+    "aliases": [
+      "BMA 400"
+    ]
   },
   {
     "name": "MPU6050",
@@ -21,7 +24,13 @@
     ],
     "category": "Accelerometer & Gyroscope",
     "manufacturer": "TDK InvenSense",
-    "description": "6-axis motion sensor combining a 3-axis accelerometer and 3-axis gyroscope."
+    "description": "6-axis motion sensor combining a 3-axis accelerometer and 3-axis gyroscope.",
+    "aliases": [
+      "MPU-6050",
+      "MPU 6050",
+      "GY-521",
+      "MPU6050 module"
+    ]
   },
   {
     "name": "BME280",
@@ -35,7 +44,10 @@
     "source": {
       "label": "Bosch Sensortec Datasheet",
       "url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
-    }
+    },
+    "aliases": [
+      "BME 280"
+    ]
   },
   {
     "name": "BMP280",
@@ -49,7 +61,10 @@
     "source": {
       "label": "Bosch Sensortec Product Page",
       "url": "https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/"
-    }
+    },
+    "aliases": [
+      "BMP 280"
+    ]
   },
   {
     "name": "SSD1306 OLED",
@@ -59,7 +74,13 @@
     ],
     "category": "OLED Display Controller",
     "manufacturer": "Solomon Systech",
-    "description": "Popular monochrome OLED display controller used in many I2C displays."
+    "description": "Popular monochrome OLED display controller used in many I2C displays.",
+    "aliases": [
+      "SSD1306",
+      "SSD 1306",
+      "I2C OLED",
+      "128x64 OLED"
+    ]
   },
   {
     "name": "SH1106 OLED",
@@ -69,7 +90,12 @@
     ],
     "category": "OLED Display Controller",
     "manufacturer": "Sino Wealth",
-    "description": "Monochrome OLED display controller commonly used in small I2C OLED modules."
+    "description": "Monochrome OLED display controller commonly used in small I2C OLED modules.",
+    "aliases": [
+      "SH1106",
+      "SH 1106",
+      "I2C OLED"
+    ]
   },
   {
     "name": "DS3231",
@@ -82,7 +108,12 @@
     "source": {
       "label": "Analog Devices Datasheet",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf"
-    }
+    },
+    "aliases": [
+      "DS 3231",
+      "DS3231 RTC",
+      "I2C RTC"
+    ]
   },
   {
     "name": "DS1307",
@@ -91,7 +122,12 @@
     ],
     "category": "Real-Time Clock",
     "manufacturer": "Maxim Integrated",
-    "description": "Low-power real-time clock."
+    "description": "Low-power real-time clock.",
+    "aliases": [
+      "DS 1307",
+      "DS1307 RTC",
+      "I2C RTC"
+    ]
   },
   {
     "name": "PCF8574",
@@ -111,7 +147,12 @@
     "source": {
       "label": "NXP Datasheet",
       "url": "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
-    }
+    },
+    "aliases": [
+      "PCF 8574",
+      "I2C GPIO expander",
+      "LCD I2C backpack"
+    ]
   },
   {
     "name": "PCF8574A",
@@ -131,7 +172,12 @@
     "source": {
       "label": "NXP Datasheet",
       "url": "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
-    }
+    },
+    "aliases": [
+      "PCF 8574A",
+      "I2C GPIO expander",
+      "LCD I2C backpack"
+    ]
   },
   {
     "name": "MCP23017",
@@ -151,7 +197,11 @@
     "source": {
       "label": "Microchip Datasheet",
       "url": "https://ww1.microchip.com/downloads/en/devicedoc/20001952c.pdf"
-    }
+    },
+    "aliases": [
+      "MCP 23017",
+      "I2C GPIO expander"
+    ]
   },
   {
     "name": "ADS1115",
@@ -167,7 +217,12 @@
     "source": {
       "label": "Texas Instruments Datasheet",
       "url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf"
-    }
+    },
+    "aliases": [
+      "ADS 1115",
+      "I2C ADC",
+      "16-bit I2C ADC"
+    ]
   },
   {
     "name": "ADS1015",
@@ -179,7 +234,12 @@
     ],
     "category": "Analog-to-Digital Converter",
     "manufacturer": "Texas Instruments",
-    "description": "12-bit ADC with four input channels."
+    "description": "12-bit ADC with four input channels.",
+    "aliases": [
+      "ADS 1015",
+      "I2C ADC",
+      "12-bit I2C ADC"
+    ]
   },
   {
     "name": "INA219",
@@ -195,7 +255,12 @@
     "source": {
       "label": "Texas Instruments Product Page",
       "url": "https://www.ti.com/product/INA219"
-    }
+    },
+    "aliases": [
+      "INA 219",
+      "I2C current sensor",
+      "I2C power monitor"
+    ]
   },
   {
     "name": "PCA9685",
@@ -223,7 +288,12 @@
     "source": {
       "label": "NXP Datasheet",
       "url": "https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf"
-    }
+    },
+    "aliases": [
+      "PCA 9685",
+      "I2C PWM driver",
+      "I2C servo driver"
+    ]
   },
   {
     "name": "BH1750",
@@ -233,7 +303,12 @@
     ],
     "category": "Light Sensor",
     "manufacturer": "ROHM",
-    "description": "Digital ambient light sensor."
+    "description": "Digital ambient light sensor.",
+    "aliases": [
+      "BH 1750",
+      "GY-302",
+      "I2C light sensor"
+    ]
   },
   {
     "name": "HMC5883L",
@@ -242,7 +317,13 @@
     ],
     "category": "3-Axis Magnetometer",
     "manufacturer": "Honeywell",
-    "description": "Digital 3-axis magnetic field sensor."
+    "description": "Digital 3-axis magnetic field sensor.",
+    "aliases": [
+      "HMC 5883L",
+      "HMC5883",
+      "I2C magnetometer",
+      "compass sensor"
+    ]
   },
   {
     "name": "QMC5883L",
@@ -251,7 +332,13 @@
     ],
     "category": "3-Axis Magnetometer",
     "manufacturer": "QST",
-    "description": "Digital 3-axis magnetic sensor commonly used as a compass module."
+    "description": "Digital 3-axis magnetic sensor commonly used as a compass module.",
+    "aliases": [
+      "QMC 5883L",
+      "QMC5883",
+      "I2C magnetometer",
+      "compass sensor"
+    ]
   },
   {
     "name": "VL53L0X",
@@ -264,7 +351,13 @@
     "source": {
       "label": "STMicroelectronics Product Page",
       "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x"
-    }
+    },
+    "aliases": [
+      "VL53L0X",
+      "VL53 L0X",
+      "I2C distance sensor",
+      "ToF sensor"
+    ]
   },
   {
     "name": "SHT31",
@@ -274,7 +367,12 @@
     ],
     "category": "Temperature & Humidity Sensor",
     "manufacturer": "Sensirion",
-    "description": "Digital temperature and humidity sensor."
+    "description": "Digital temperature and humidity sensor.",
+    "aliases": [
+      "SHT 31",
+      "SHT31-D",
+      "I2C temperature humidity sensor"
+    ]
   },
   {
     "name": "CCS811",
@@ -284,7 +382,12 @@
     ],
     "category": "Air Quality Sensor",
     "manufacturer": "ScioSense",
-    "description": "Digital indoor air-quality sensor."
+    "description": "Digital indoor air-quality sensor.",
+    "aliases": [
+      "CCS 811",
+      "I2C air quality sensor",
+      "eCO2 sensor"
+    ]
   },
   {
     "name": "AHT20",
@@ -293,7 +396,11 @@
     ],
     "category": "Temperature & Humidity Sensor",
     "manufacturer": "ASAIR",
-    "description": "Digital temperature and humidity sensor."
+    "description": "Digital temperature and humidity sensor.",
+    "aliases": [
+      "AHT 20",
+      "I2C temperature humidity sensor"
+    ]
   },
   {
     "name": "TCA9548A",
@@ -313,6 +420,12 @@
     "source": {
       "label": "Texas Instruments Datasheet",
       "url": "https://www.ti.com/lit/ds/symlink/tca9548a.pdf"
-    }
+    },
+    "aliases": [
+      "TCA 9548A",
+      "I2C multiplexer",
+      "I2C multiplexer module",
+      "I2C address conflict solution"
+    ]
   }
 ]
