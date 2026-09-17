@@ -56,6 +56,17 @@ The compatibility checker helps identify these conflicts and find possible addre
 
 ---
 
+## Common I2C Address Conflicts
+
+Some combinations are especially useful to check before building a project:
+
+- **MPU6050 + DS3231:** both may use `0x68`; the MPU6050 can use `0x69` when supported by the hardware configuration.
+- **BME280 + BMP280:** both commonly use `0x76` or `0x77`, so they may require different address settings or separate buses.
+- **SSD1306 + SH1106:** both commonly use `0x3C` or `0x3D`, depending on the module.
+- **Multiple fixed-address devices:** if two devices have no alternative address, an additional I2C bus or multiplexer may be required.
+
+These examples describe address compatibility only; they do not establish electrical compatibility.
+
 ## How It Works
 
 1. Search for an I2C device.
@@ -99,6 +110,37 @@ Possible solutions include:
 - Using an I2C multiplexer such as the TCA9548A
 
 ---
+
+## I2C Device Address Reference
+
+Use this table as a quick reference for common I2C addresses. The online checker can test several devices together and detect overlapping address options.
+
+| I2C Device | Common I2C Address(es) | Category |
+|---|---|---|
+| MPU6050 | 0x68, 0x69 | Accelerometer & gyroscope |
+| BME280 | 0x76, 0x77 | Temperature, humidity & pressure |
+| BMP280 | 0x76, 0x77 | Pressure & temperature |
+| SSD1306 OLED | 0x3C, 0x3D | OLED display |
+| SH1106 OLED | 0x3C, 0x3D | OLED display |
+| DS3231 | 0x68 | Real-time clock |
+| DS1307 | 0x68 | Real-time clock |
+| PCF8574 | 0x20–0x27 | I/O expander |
+| PCF8574A | 0x38–0x3F | I/O expander |
+| MCP23017 | 0x20–0x27 | I/O expander |
+| ADS1115 | 0x48–0x4B | 16-bit ADC |
+| ADS1015 | 0x48–0x4B | 12-bit ADC |
+| INA219 | 0x40, 0x41, 0x44, 0x45 | Current/power monitor |
+| PCA9685 | 0x40–0x4F | PWM/servo driver |
+| BH1750 | 0x23, 0x5C | Light sensor |
+| HMC5883L | 0x1E | Magnetometer |
+| QMC5883L | 0x0D | Magnetometer |
+| VL53L0X | 0x29 | Time-of-flight distance sensor |
+| SHT31 | 0x44, 0x45 | Temperature & humidity |
+| CCS811 | 0x5A, 0x5B | Air quality |
+| AHT20 | 0x38 | Temperature & humidity |
+| TCA9548A | 0x70–0x77 | I2C multiplexer |
+
+> Address values can depend on the exact IC, breakout board and hardware configuration. Always verify the manufacturer documentation for the module you are using.
 
 ## Supported Devices
 
